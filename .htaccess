@@ -319,6 +319,18 @@ AddDefaultCharset utf-8
     # (3)
     # Options +SymLinksIfOwnerMatch
 
+     # Запускаем движок замены
+
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+     # если запрашиваемый объект с дописанным расширением php - файл
+
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+
+     # делаем замену с дописыванием .php
+
+    RewriteRule ^(.*)$ $1.php
     # (4)
     # RewriteBase /
 
