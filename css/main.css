@@ -293,3 +293,9 @@ textarea {
 }
 
 
+.height{
+    height: 100vh;
+}
+.my-work-row{
+    text-align: center;
+}
