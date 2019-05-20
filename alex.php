@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Document</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,7 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/borders.css">
 
 	<meta name="theme-color" content="#fafafa">
 </head>
@@ -23,19 +24,27 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<p>Hello world! Alex</p>
+<p>Hello world! Alex new test</p>
+<img src="https://cdn1.iconfinder.com/data/icons/marketing-filled-outline-1/64/analysis-128.png" alt ="">
+<img src="https://cdn1.iconfinder.com/data/icons/marketing-filled-outline-1/64/feedback-128.png" alt = "">
+<img src="https://cdn1.iconfinder.com/data/icons/marketing-filled-outline-1/64/income-128.png" alt = "">
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script src="01.js"></script>
+
+
 </body>
+
+
+
 
 </html>
