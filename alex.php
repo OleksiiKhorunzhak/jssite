@@ -24,6 +24,9 @@
 
 <!-- Add your site or application content here -->
 <p>Hello world! Alex</p>
+<img src="https://cdn1.iconfinder.com/data/icons/marketing-filled-outline-1/64/analysis-128.png" alt ="">
+<img src="https://cdn1.iconfinder.com/data/icons/marketing-filled-outline-1/64/feedback-128.png" alt = "">
+
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
@@ -36,7 +39,6 @@
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-<img src="https://www.iconfinder.com/icons/4633881/advertising_analysis_business_chart_marketing_promotion_research_icon" alt ="">
 
 
 </body>
