@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -31,6 +32,37 @@
 
         <div class="col-12 height-500 h-50 border border-dark" id="Work_1">
             <div id="mousediv"></div>
+        </div>
+    </div>
+    <div class="row code_row">
+        <div class="col-12">
+            <pre>
+                <code>
+                        <span style="color: #008000">document</span>.querySelector(<span style="color: #BA2121">&#39;#Work_1&#39;</span>).onmousemove <span
+                                                style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">function</span> (event) {
+                            event <span style="color: #666666">=</span> event <span style="color: #666666">||</span> <span
+                                                style="color: #008000">window</span>.event;
+                            <span style="color: #008000">document</span>.querySelector(<span style="color: #BA2121">&#39;#offx&#39;</span>).innerHTML <span
+                                                style="color: #666666">=</span> event.offsetX;
+                            <span style="color: #008000">document</span>.querySelector(<span style="color: #BA2121">&#39;#offy&#39;</span>).innerHTML <span
+                                                style="color: #666666">=</span> event.offsetY;
+                            <span style="color: #008000; font-weight: bold">var</span> moveDiv <span style="color: #666666">=</span> <span
+                                                style="color: #008000">document</span>.getElementById(<span style="color: #BA2121">&#39;mousediv&#39;</span>);
+                            <span style="color: #008000; font-weight: bold">var</span> x <span style="color: #666666">=</span> event.offsetX;
+                            <span style="color: #008000; font-weight: bold">var</span> y <span style="color: #666666">=</span> event.offsetY;
+                            <span style="color: #008000; font-weight: bold">if</span> (x <span style="color: #666666">&gt;</span> <span
+                                                style="color: #666666">0</span> <span style="color: #666666">&amp;&amp;</span> y <span
+                                                style="color: #666666">&gt;</span> <span style="color: #666666">0</span>) {
+                                moveDiv.style.top <span style="color: #666666">=</span> (y <span style="color: #666666">-</span> <span
+                                                style="color: #666666">40</span>) <span style="color: #666666">+</span> <span
+                                                style="color: #BA2121">&#39;px&#39;</span>;
+                                moveDiv.style.left <span style="color: #666666">=</span> (x <span style="color: #666666">-</span> <span
+                                                style="color: #666666">40</span>) <span style="color: #666666">+</span> <span
+                                                style="color: #BA2121">&#39;px&#39;</span>;
+                            }
+                        };
+                    </code>
+            </pre>
         </div>
     </div>
 </div>

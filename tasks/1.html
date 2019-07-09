@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -39,6 +40,38 @@
         </div>
         <div class="co-6 col-sm-3 col-md-4 mt-2 click_item">
             <img class="rounded my_click" src="https://picsum.photos/200?random6" alt="">
+        </div>
+    </div>
+    <div class="row code_row">
+        <div class="col-12">
+            <pre>
+                <code>
+                    <span style="color: #007020">document</span>.querySelector(<span
+                    style="background-color: #fff0f0">&#39;#tack_1&#39;</span>).onclick <span
+                    style="color: #333333">=</span> <span
+                    style="color: #008800; font-weight: bold">function</span> (event) {
+                            event <span style="color: #333333">=</span> event <span style="color: #333333">||</span> <span
+                        style="color: #007020">window</span>.event;
+                            <span style="color: #008800; font-weight: bold">if</span> (event.target.tagName <span
+                        style="color: #333333">==</span> <span
+                        style="background-color: #fff0f0">&quot;IMG&quot;</span> <span
+                        style="color: #333333">&amp;&amp;</span> event.target.classList.contains(<span
+                        style="background-color: #fff0f0">&#39;border&#39;</span>, <span
+                        style="background-color: #fff0f0">&#39;border-warning&#39;</span>)) {
+                                event.target.classList.remove(<span
+                        style="background-color: #fff0f0">&#39;border&#39;</span>, <span
+                        style="background-color: #fff0f0">&#39;border-warning&#39;</span>)
+                            } <span style="color: #008800; font-weight: bold">else</span> {
+                                <span style="color: #008800; font-weight: bold">if</span> (event.target.tagName <span
+                        style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;IMG&quot;</span>) {
+                                    event.target.classList.add(<span
+                        style="background-color: #fff0f0">&#39;border&#39;</span>, <span
+                        style="background-color: #fff0f0">&#39;border-warning&#39;</span>);
+                                }
+                            }
+                        };
+                    </code>
+            </pre>
         </div>
     </div>
 </div>

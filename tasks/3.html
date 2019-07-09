@@ -49,6 +49,47 @@
             </div>
         </div>
     </div>
+    <div class="row code_row">
+        <div class="col-12">
+            <pre>
+                <code>
+                        <span style="color: #008000; font-weight: bold">var</span> slide <span style="color: #666666">=</span> <span style="color: #008000">document</span>.querySelectorAll(<span style="color: #BA2121">&#39;.slide&#39;</span>),
+                            firstSlide <span style="color: #666666">=</span> slide[<span style="color: #666666">0</span>],
+                            totalSlides <span style="color: #666666">=</span> slide.length,
+                            slideIndex <span style="color: #666666">=</span> <span style="color: #666666">1</span>,
+                            i;
+
+                        firstSlide.className <span style="color: #666666">+=</span> <span style="color: #BA2121">&#39; active&#39;</span>;
+
+                        <span style="color: #008000">document</span>.querySelector(<span style="color: #BA2121">&#39;.prev_arrow&#39;</span>).onclick <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">function</span> () {
+                            slideAction(<span style="color: #666666">-1</span>)
+                        };
+
+                        <span style="color: #008000">document</span>.querySelector(<span style="color: #BA2121">&#39;.next_arrow&#39;</span>).onclick <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">function</span> () {
+                            slideAction(<span style="color: #666666">1</span>)
+                        };
+
+                        <span style="color: #008000; font-weight: bold">function</span> slideAction(n) {
+                            InitSlide(slideIndex <span style="color: #666666">+=</span> n);
+                        }
+
+                        <span style="color: #008000; font-weight: bold">function</span> InitSlide(n) {
+                            <span style="color: #008000; font-weight: bold">if</span> (n <span style="color: #666666">&gt;</span> totalSlides) {
+                                slideIndex <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+                            }
+                            <span style="color: #008000; font-weight: bold">if</span> (n <span style="color: #666666">&lt;</span> <span style="color: #666666">1</span>) {
+                                slideIndex <span style="color: #666666">=</span> totalSlides
+                            }
+
+                            <span style="color: #008000; font-weight: bold">for</span> (i <span style="color: #666666">=</span> <span style="color: #666666">0</span>; i <span style="color: #666666">&lt;</span> totalSlides; i<span style="color: #666666">++</span>) {
+                                slide[i].classList.remove(<span style="color: #BA2121">&#39;active&#39;</span>);
+                            }
+                            slide[slideIndex <span style="color: #666666">-</span> <span style="color: #666666">1</span>].className <span style="color: #666666">+=</span> <span style="color: #BA2121">&quot; active&quot;</span>;
+                        }
+                    </code>
+            </pre>
+        </div>
+    </div>
 </div>
 
 <script src="/js/3.js"></script>
