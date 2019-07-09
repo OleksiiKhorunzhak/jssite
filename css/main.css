@@ -383,3 +383,45 @@ img.rounded.my_click.border.border-warning {
 .slider-items {
     z-index: 2;
 }
+
+.tasks_link {
+    color: #2f3638;
+    opacity: 0.8;
+    transition: .1s;
+}
+
+.tasks_link:hover {
+    text-decoration: none;
+    color: #2f3638;
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+img.rounded.my_click {
+    max-width: 100%;
+}
+
+.to_list {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #2f3638;
+    opacity: 0.8;
+    transition: .2s;
+}
+
+.to_list a {
+    color: #2f3638;
+    display: block;
+    padding: 5px 10px;
+}
+
+.to_list:hover a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.to_list:hover {
+    opacity: 1;
+    background: #2f3638;
+}
